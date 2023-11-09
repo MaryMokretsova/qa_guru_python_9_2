@@ -16,7 +16,7 @@ def test_google_find_selene(browser_configs):
     browser.element('[id="search"]').should(have.text('Selene - User-oriented Web UI browser tests in Python'))
 
 
-def test_google_find_fdghsjkdhsfk(browser_configs):
+def test_google_find_HHHHHHHHTttttttttttwwwuuu(browser_configs):
     browser.open('https://google.com')
     browser.element('[name="q"]').should(be.blank).type('HHHHHHHHTttttttttttwwwuuu').press_enter()
     browser.element('[class="card-section"]').should(have.text('По запросу HHHHHHHHTttttttttttwwwuuu ничего не найдено'))
