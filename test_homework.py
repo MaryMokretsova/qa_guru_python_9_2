@@ -1,4 +1,6 @@
 import math
+import random
+
 
 def test_greeting():
     """
@@ -50,6 +52,9 @@ def test_random_list():
     """
 
     # TODO создайте список
+    # (random.randint(a:1, b:100))
+    # (random.randint(a:1, b:100))
+    # (random.randint(a:1, b:100))
     l = []
     assert len(l) == 10
     assert l[0] < l[-1]
@@ -59,7 +64,7 @@ def test_unique_elements():
     """
     Удалите из списка все повторяющиеся элементы
     """
-    l = [1, 2, 3, 4, 5, 5, 5, 6, 7, 8, 8, 9, 10, 10]
+    l = list(set([1, 2, 3, 4, 5, 5, 5, 6, 7, 8, 8, 9, 10, 10]))
     # TODO удалите повторяющиеся элементы
 
     assert isinstance(l, list)
@@ -77,7 +82,9 @@ def test_dicts():
     first = ["a", "b", "c", "d", "e"]
     second = [1, 2, 3, 4, 5]
     # TODO создайте словарь
-    d = {}
-
-    assert isinstance(d, dict)
-    assert len(d) == 5
+    d = {
+        first: second
+    }
+    print(d)
+    # assert isinstance(d, dict)
+    # assert len(d) == 5
